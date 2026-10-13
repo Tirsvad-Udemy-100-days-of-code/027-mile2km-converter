@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [140fd57] |
 
 ---
 
@@ -56,3 +56,4 @@ Go — all Mandatory criteria pass.
 
 [ci.yml]: ../../../.gitea/workflows/ci.yml
 [QC-YML-001]: ../../../framework/qc/code/qc-yaml.md
+[140fd57]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/commit/140fd579c69b061c4736246bfc024ebc9ca84507
