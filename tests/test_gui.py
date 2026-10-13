@@ -4,8 +4,9 @@ from collections.abc import Iterator
 
 import pytest
 
-# Skip the whole module before tkinter is imported: it is missing on headless runners.
-pytest.importorskip("tkinter")
+# Skip the whole module before tkinter is imported: it is missing on headless runners,
+# where the import raises a plain ImportError (libtk8.6.so), not ModuleNotFoundError.
+pytest.importorskip("tkinter", exc_type=ImportError)
 
 import tkinter as tk
 
