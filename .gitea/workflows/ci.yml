@@ -1,0 +1,40 @@
+# Continuous integration: run the pytest suite.
+#
+# Purpose:   prove that the tests pass on a clean install of the project.
+# Triggers:  pull requests, and pushes to main.
+# Inputs:    none.
+# Secrets:   none.
+# Changes outside the repository: none; it only reads the code and runs tests.
+# Implements: MIL-001 task "Add CI workflow" (docs/milestones/mil-001-project-baseline.md).
+# Host:      Gitea Actions; the same file also runs on GitHub Actions (no gitea.* contexts).
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the project
+        uses: actions/checkout@v4.2.2
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5.3.0
+        with:
+          python-version: "3.13"
+      - name: Create the virtual environment
+        run: python -m venv .venv
+      - name: Install the project with its test dependencies
+        run: .venv/bin/python -m pip install ".[dev]"
+      - name: Run the tests
+        run: .venv/bin/python -m pytest

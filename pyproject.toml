@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mile2km-converter"
+version = "0.1.0"
+description = "Miles to kilometers converter with a Tkinter GUI (Udemy 100 Days of Code, day 27)"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.13"
+# Runtime uses only the standard library (tkinter ships with Python).
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "pyyaml==6.0.3", "yamllint==1.38.0"]
+
+[project.scripts]
+mile2km = "mile2km.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

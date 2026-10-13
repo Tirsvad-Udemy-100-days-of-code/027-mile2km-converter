@@ -1,0 +1,9 @@
+# yamllint configuration for the workflow files in .gitea/workflows/.
+extends: default
+rules:
+  line-length:
+    max: 120
+  truthy:
+    # GitHub and Gitea workflows use the key `on`.
+    check-keys: false
+  document-start: disable
