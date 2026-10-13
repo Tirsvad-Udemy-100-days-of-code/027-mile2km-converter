@@ -1,14 +1,15 @@
 """Static checks of the CI workflow: valid YAML, required keys, explicit permissions and runner."""
 
 from pathlib import Path
+from typing import Any, cast
 
 import yaml
 
 WORKFLOW = Path(__file__).resolve().parents[1] / ".gitea" / "workflows" / "ci.yml"
 
 
-def _load() -> dict:
-    return yaml.safe_load(WORKFLOW.read_text(encoding="utf-8"))
+def _load() -> dict[Any, Any]:
+    return cast(dict[Any, Any], yaml.safe_load(WORKFLOW.read_text(encoding="utf-8")))
 
 
 def test_workflow_declares_name_triggers_and_jobs() -> None:
