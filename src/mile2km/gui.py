@@ -16,15 +16,22 @@ class ConverterWindow:
 
         @param master Existing root window, or None to create one.
         """
+        ## Root window that holds all widgets.
         self.window: tk.Tk = master if master is not None else tk.Tk()
         self.window.title(constants.WINDOW_TITLE)
         self.window.config(padx=constants.WINDOW_PADDING, pady=constants.WINDOW_PADDING)
 
+        ## Entry where the user types the distance in miles.
         self.miles_entry = tk.Entry(self.window, width=constants.ENTRY_WIDTH)
+        ## Label next to the miles entry.
         self.miles_label = tk.Label(self.window, text=constants.LABEL_MILES)
+        ## Label between the entry and the result.
         self.equal_label = tk.Label(self.window, text=constants.LABEL_EQUAL)
+        ## Label that shows the converted distance, or an error message.
         self.result_label = tk.Label(self.window, text=constants.DEFAULT_RESULT)
+        ## Label with the unit of the result.
         self.km_label = tk.Label(self.window, text=constants.LABEL_KM)
+        ## Button that starts the conversion.
         self.calculate_button = tk.Button(
             self.window, text=constants.BUTTON_CALCULATE, command=self.button_clicked
         )
