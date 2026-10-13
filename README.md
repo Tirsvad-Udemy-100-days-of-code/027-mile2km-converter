@@ -90,7 +90,7 @@ The GUI tests are skipped when Tkinter or a display is not available; the conver
 
 ## Continuous integration
 
-`.gitea/workflows/ci.yml` creates a virtual environment on Python 3.13, installs `.[dev]` and runs `python -m pytest` on every pull request and every push to `main`. It needs no secrets. The GUI tests are skipped on the runner because it has no Tk library.
+`.gitea/workflows/ci.yml` installs `python3-tk` and `xvfb`, creates a virtual environment on Python 3.13, installs `.[dev]` and runs `python -m pytest` under a virtual display on every pull request and every push to `main`, so the GUI tests run too. It needs no secrets.
 
 ## Build the source documentation
 

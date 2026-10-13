@@ -1,11 +1,13 @@
-# Continuous integration: run the pytest suite.
+# Continuous integration: run the pytest suite, including the Tkinter window tests
+# under a virtual display (Xvfb).
 #
 # Purpose:   prove that the tests pass on a clean install of the project.
 # Triggers:  pull requests, and pushes to main.
 # Inputs:    none.
 # Secrets:   none.
 # Changes outside the repository: none; it only reads the code and runs tests.
-# Implements: MIL-001 task "Add CI workflow" (docs/milestones/mil-001-project-baseline.md).
+# Implements: MIL-001 task "Add CI workflow" and MIL-004 task "Run GUI tests in CI"
+#             (docs/milestones/mil-001-project-baseline.md, mil-004-ci-gui-tests.md).
 # Host:      Gitea Actions; the same file also runs on GitHub Actions (no gitea.* contexts).
 name: CI
 
@@ -28,6 +30,10 @@ jobs:
     steps:
       - name: Check out the project
         uses: actions/checkout@v4.2.2
+      - name: Install Tk and a virtual display
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends python3-tk xvfb
       - name: Set up Python 3.13
         uses: actions/setup-python@v5.3.0
         with:
@@ -36,5 +42,5 @@ jobs:
         run: python -m venv .venv
       - name: Install the project with its test dependencies
         run: .venv/bin/python -m pip install ".[dev]"
-      - name: Run the tests
-        run: .venv/bin/python -m pytest
+      - name: Run the tests under the virtual display
+        run: xvfb-run -a .venv/bin/python -m pytest -v
