@@ -1,9 +1,13 @@
-"""Smoke tests of the Tkinter window; skipped when no display is available."""
+"""Smoke tests of the Tkinter window; skipped when tkinter or a display is unavailable."""
 
-import tkinter as tk
 from collections.abc import Iterator
 
 import pytest
+
+# Skip the whole module before tkinter is imported: it is missing on headless runners.
+pytest.importorskip("tkinter")
+
+import tkinter as tk
 
 from mile2km import constants
 from mile2km.gui import ConverterWindow
