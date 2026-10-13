@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-13 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [9bcf252] |
 
 ---
 
@@ -65,3 +65,4 @@ An updated `.gitea/workflows/ci.yml` that installs `python3-tk` and a virtual di
 ---
 
 [BC-001]: ../business-case.md
+[9bcf252]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/commit/9bcf2525f61cd2b9ade0d7ba4e6857e7e83890ab
