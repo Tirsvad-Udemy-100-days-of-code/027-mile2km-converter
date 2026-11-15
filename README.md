@@ -111,8 +111,10 @@ The HTML is written to `docs/doxygen/html/index.html` (the folder is not committ
 | `src/mile2km/gui.py` | The Tkinter window and `button_clicked` |
 | `src/mile2km/__main__.py` | Entry point for `python -m mile2km` |
 | `tests/` | pytest tests of the conversion, the window and the CI workflow |
-| `docs/` | Project documents, review records and screenshots |
+| `docs/` | Project documents, review records, the wiki (`docs/wiki/`) and screenshots |
 | `Doxyfile` | Doxygen configuration |
+| `.editorconfig` | Editor settings of the framework baseline |
+| `.env.example` | Placeholders for the tokens of the framework scripts |
 | `pyproject.toml` | Project configuration, with no runtime dependencies |
 | `.gitea/workflows/ci.yml` | Continuous integration |
 
@@ -130,14 +132,12 @@ GNU Affero General Public License v3.0, see [LICENSE][license].
 
 | Document | What it tells you |
 | --- | --- |
-| [AGENTS.md][agents] | The rules AI agents follow in this repository |
 | [Business Case][BC-001] | Why the project exists, its scope and success criteria |
 | [Stakeholder Analysis][SA-001] | Who is involved; the stakeholder IDs used for owners and reviewers |
 | [Project Plan][PP-001] | The gateways and their schedule |
 | [Milestones][milestones] | One document per gateway: Go/No-Go criteria and tasks |
 | [Artifact registry][registry] | Where each artifact type lives, the next version, the PO language and domain |
-| [Framework README][framework-readme] | The framework this project uses |
-| [Framework changelog][framework-changelog] | What changed in each framework release |
+| [Traceability matrix][TM-001] | How the artifacts link and when each was last reviewed |
 
 ---
 
@@ -145,11 +145,9 @@ GNU Affero General Public License v3.0, see [LICENSE][license].
 [documentation]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/wiki
 [issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/issues
 [license]: ./LICENSE
-[agents]: ./AGENTS.md
 [BC-001]: ./docs/business-case.md
 [SA-001]: ./docs/stakeholder-analysis.md
 [PP-001]: ./docs/project-plan.md
 [milestones]: ./docs/milestones/
 [registry]: ./docs/artifact-registry.md
-[framework-readme]: ./framework/README.md
-[framework-changelog]: ./framework/CHANGELOG.md
+[TM-001]: ./docs/sqa/traceability-matrix.md

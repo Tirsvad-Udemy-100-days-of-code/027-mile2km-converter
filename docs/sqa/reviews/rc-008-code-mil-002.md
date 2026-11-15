@@ -58,3 +58,4 @@ Go — all Mandatory criteria pass after the review edits (flaky GUI fixture fix
 [code-mil-002]: ../../../src/mile2km/gui.py
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [190a1fa]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/commit/190a1fa44b010a11c4d8f0e71b8ce52bc7b639d7
+[PP-001]: ../../project-plan.md

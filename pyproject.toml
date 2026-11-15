@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,10 +7,17 @@ name = "mile2km-converter"
 version = "0.1.0"
 description = "Miles to kilometers converter with a Tkinter GUI (Udemy 100 Days of Code, day 27)"
 readme = "README.md"
-license = { file = "LICENSE" }
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Jens Tirsvad Nielsen" }]
 requires-python = ">=3.13"
 # Runtime uses only the standard library (tkinter ships with Python).
 dependencies = []
+
+[project.urls]
+Repository = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter"
+Documentation = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/wiki"
+"Issue tracker" = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/issues"
 
 [project.optional-dependencies]
 dev = ["pytest==9.1.1", "pyyaml==6.0.3", "types-PyYAML==6.0.12.20250915", "yamllint==1.38.0"]
