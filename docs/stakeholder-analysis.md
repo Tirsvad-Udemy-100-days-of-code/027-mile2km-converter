@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [04cc0e3] |
-| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added concern IDs CN-001 to CN-006 (QC-SA-001 criterion 9), the baseline concern CN-007, the baseline milestone in the communication table, a conflict about the stand-in reviewer and the traceability of the concerns; set the domain to education; reviewed in autonomous mode, not independent | pending |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added concern IDs CN-001 to CN-006 (QC-SA-001 criterion 9), the baseline concern CN-007, the baseline milestone in the communication table, a conflict about the stand-in reviewer and the traceability of the concerns; set the domain to education; reviewed in autonomous mode, not independent | [9fd6cde] |
 
 ---
 
@@ -87,3 +87,4 @@ Identify who is affected by the miles-to-kilometers converter project and what e
 [BC-001]: ./business-case.md
 [04cc0e3]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/commit/04cc0e3e8494b836cd6445d64b0ff967354b2545
 [MIL-005]: ./milestones/mil-005-framework-baseline.md
+[9fd6cde]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/commit/9fd6cde0a158f4d49e21e4156abda8d3cac2036e

@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | S01 | Initial version; accepted by S01 in chat on 2026-10-13 | [04cc0e3] |
-| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the gateway MIL-004 that was missing from the plan and the baseline gateway MIL-005, with their schedule, scope coverage, dependency, risk and Gantt entries; linked the git host milestones of MIL-001 to MIL-004; set the domain to education; reviewed in autonomous mode, not independent | pending |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the gateway MIL-004 that was missing from the plan and the baseline gateway MIL-005, with their schedule, scope coverage, dependency, risk and Gantt entries; linked the git host milestones of MIL-001 to MIL-004; set the domain to education; reviewed in autonomous mode, not independent | [9fd6cde] |
 
 ---
 
@@ -113,3 +113,4 @@ A No-Go on a gateway moves every later date by the rework time; nothing under `s
 [milestone-137]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/milestone/137
 [milestone-145]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/milestone/145
 [milestone-538]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/milestone/538
+[9fd6cde]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/commit/9fd6cde0a158f4d49e21e4156abda8d3cac2036e

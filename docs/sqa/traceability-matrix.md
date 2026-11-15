@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; created with the review records of the baseline (autonomous, not independent) | pending |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; created with the review records of the baseline (autonomous, not independent) | [9fd6cde] |
 
 ---
 
@@ -87,3 +87,4 @@ Tracks backward and forward links between the artifact instances of Miles to Kil
 [RC-018]: ./reviews/rc-018-milestone-004-baseline.md
 [RC-019]: ./reviews/rc-019-milestone-005.md
 [RC-020]: ./reviews/rc-020-wiki.md
+[9fd6cde]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/commit/9fd6cde0a158f4d49e21e4156abda8d3cac2036e

@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; accepted with the Go verdict of the review record (autonomous, not independent) | pending |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; accepted with the Go verdict of the review record (autonomous, not independent) | [9fd6cde] |
 
 ---
 
@@ -77,3 +77,4 @@ A merged pull request that holds: the updated Business Case, Stakeholder Analysi
 [PP-001]: ../project-plan.md
 [MIL-003]: ./mil-003-documentation-and-publication.md
 [MIL-004]: ./mil-004-ci-gui-tests.md
+[9fd6cde]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/commit/9fd6cde0a158f4d49e21e4156abda8d3cac2036e

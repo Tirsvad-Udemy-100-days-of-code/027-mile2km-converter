@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-13 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [04cc0e3] |
-| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 7, success criterion 6, a scope item, an out-of-scope item, a risk, an assumption and a constraint exception for the baseline milestone MIL-005; changed the measure of success criterion 4 to the page names of the new wiki; set the domain to education; reviewed in autonomous mode, not independent | pending |
+| 2026-11-15 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 7, success criterion 6, a scope item, an out-of-scope item, a risk, an assumption and a constraint exception for the baseline milestone MIL-005; changed the measure of success criterion 4 to the page names of the new wiki; set the domain to education; reviewed in autonomous mode, not independent | [9fd6cde] |
 
 ---
 
@@ -144,3 +144,4 @@ Proceed — the scope is small, the constraints are clear and the benefit is a r
 [MIL-003]: ./milestones/mil-003-documentation-and-publication.md
 [MIL-004]: ./milestones/mil-004-ci-gui-tests.md
 [MIL-005]: ./milestones/mil-005-framework-baseline.md
+[9fd6cde]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/commit/9fd6cde0a158f4d49e21e4156abda8d3cac2036e
