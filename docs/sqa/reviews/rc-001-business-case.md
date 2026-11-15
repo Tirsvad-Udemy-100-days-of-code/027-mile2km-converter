@@ -66,3 +66,4 @@ Go — all Mandatory criteria pass; the Optional criterion also passes. The Busi
 [QC-BC-001]: ../../../framework/qc/artifacts/qc-business-case.md
 [QC-LANG-001]: ../../../framework/qc/artifacts/qc-language-domain.md
 [04cc0e3]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/commit/04cc0e3e8494b836cd6445d64b0ff967354b2545
+[SA-001]: ../../stakeholder-analysis.md

@@ -66,3 +66,4 @@ Go — all Mandatory criteria pass; the workflow ran green on the pull request.
 [ci.yml]: ../../../.gitea/workflows/ci.yml
 [QC-WF-001]: ../../../framework/qc/code/qc-workflow.md
 [140fd57]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/027-mile2km-converter/commit/140fd579c69b061c4736246bfc024ebc9ca84507
+[QC-YML-001]: ../../../framework/qc/code/qc-yaml.md
